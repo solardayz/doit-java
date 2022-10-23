@@ -1,28 +1,31 @@
-package chatpter06.staticexample;
+package chapter06.staticexample;
 
-public class Student {
-
+public class Student1 {
     public static int serialNum = 1000;
-    int StudentID;
+    int studentID;
     String studentName;
     int grade;
     String address;
 
-    public String getStudentName(){
+    public Student1(){
+        serialNum++;
+        studentID = serialNum;
+    }
+
+    public String getStudentName() {
         return studentName;
     }
 
-    public void setStudentName(String name) {
+    public void setStudentName(String name){
         studentName = name;
     }
 
     public static int getSerialNum() {
         int i = 10;
-//        studentName = "test";
         return serialNum;
     }
 
     public static void setSerialNum(int serialNum){
-        Student.serialNum = serialNum;
+        Student1.serialNum = serialNum;
     }
 }

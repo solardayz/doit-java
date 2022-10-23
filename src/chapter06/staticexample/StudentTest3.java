@@ -1,4 +1,4 @@
-package chatpter06.staticexample;
+package chapter06.staticexample;
 
 public class StudentTest3 {
 

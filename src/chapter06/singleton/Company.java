@@ -1,4 +1,4 @@
-package chatpter06.singleton;
+package chapter06.singleton;
 
 public class Company {
 

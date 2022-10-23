@@ -1,4 +1,4 @@
-package chatpter06.thisexample;
+package chapter06.thisexample;
 
 class BirthDay {
 

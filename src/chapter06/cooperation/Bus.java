@@ -1,4 +1,4 @@
-package chatpter06.cooperation;
+package chapter06.cooperation;
 
 public class Bus {
     int busNum;
