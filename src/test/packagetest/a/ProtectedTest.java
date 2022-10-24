@@ -33,4 +33,6 @@ public class ProtectedTest {
     public ProtectedTest test5 () {
         return this;
     }
+
+    //
 }
