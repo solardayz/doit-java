@@ -16,4 +16,9 @@ public class MyClass implements MyInterface{
     public void y() {
         System.out.println("MyClass.y");
     }
+
+    @Override
+    public void sell() {
+
+    }
 }

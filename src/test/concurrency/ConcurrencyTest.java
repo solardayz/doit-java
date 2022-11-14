@@ -28,9 +28,9 @@ public class ConcurrencyTest {
         threadB.setName("thread-B");
 
         threadA.start();
-        sleep(2000);
+//        sleep(200);
         threadB.start();
-        sleep(3000);
+//        sleep(3000);
         System.out.println("main end");
     }
 }

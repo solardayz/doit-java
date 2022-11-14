@@ -13,16 +13,18 @@ public class ConSingleTon {
     private static class MakeInstance {
         public static final ConSingleTon INSTANCE = new ConSingleTon();
     }
-
+    private static String uuid = null;
     public String makeUUI() throws InterruptedException {
-        System.out.println("getInstance = "+getInstance());
         String uuid = getUuid();
-        sleep(1000);
-        System.out.println("uuid = " + uuid+ "   getInstance = "+getInstance());
+        sleep(50);
+
+        System.out.println("리턴 uuid = " + uuid+ "   getInstance = "+getInstance() + "  Thread = "+Thread.currentThread().getName());
         return uuid;
     }
 
     private String getUuid() {
-        return UUID.randomUUID().toString().substring(0, 8);
+        String uuid = UUID.randomUUID().toString().substring(0, 8);
+        System.out.println("조회 uuid = " + uuid+ "   getInstance = "+getInstance() + "  Thread = "+Thread.currentThread().getName());
+        return uuid;
     }
 }
