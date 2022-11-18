@@ -1,6 +1,8 @@
 package test.equals;
 
 import java.lang.reflect.Method;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 public class EqualsTest {
 
@@ -23,5 +25,6 @@ public class EqualsTest {
         System.out.println("i1 = " + i1);
         int i2 = System.identityHashCode(c);
         System.out.println("i2 = " + i2);
+
     }
 }
