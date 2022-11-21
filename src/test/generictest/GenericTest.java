@@ -1,6 +1,10 @@
-package test;
+package test.generictest;
 
+import java.util.HashSet;
 import java.util.Timer;
+
+import java.util.List;
+import java.util.TreeSet;
 
 public class GenericTest {
 
@@ -22,13 +26,15 @@ public class GenericTest {
 //
 //        double rect = GenericTest.<Integer, Double>makeRectangle(p1, p2);
 //        System.out.println("두 점으로 만들어진 사각형의 넓이는 " + rect + "입니다.");
-        Shape<Tri> circleShape = new Shape<>(new Tri());
-        circleShape.shape();
+        Shape<Star> starShape = new Shape<>(new Star());
+        Star shape = starShape.getShape();
+        shape.shape();
+    new TreeSet();
 
     }
     private static class Star {
         public void shape() {
-            System.out.println("Circle.shape");
+            System.out.println("Star.shape");
         }
     }
 
@@ -57,7 +63,7 @@ public class GenericTest {
     private static abstract class ShapeCom {
         public abstract void shape();
     }
-    private static class Shape<T extends ShapeCom>{
+    private static class Shape<T>{
         private T shape;
 
         public Shape(T shape) {
@@ -67,9 +73,9 @@ public class GenericTest {
             return shape;
         }
 
-        public void shape() {
-            shape.shape();
-        }
+//        public void shape() {
+//            shape.shape();
+//        }
 
     }
 
