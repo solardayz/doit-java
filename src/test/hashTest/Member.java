@@ -1,6 +1,9 @@
 package test.hashTest;
 
-public class Member {
+import java.util.Comparator;
+import java.util.Objects;
+
+public class Member implements Comparable<Member>{
 
     int id;
     String name;
@@ -13,7 +16,6 @@ public class Member {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -25,4 +27,18 @@ public class Member {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int compareTo(Member o) {
+        int i = this.getId() - o.getId();
+        return i;
+    }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
 }
