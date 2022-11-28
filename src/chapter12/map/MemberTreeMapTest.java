@@ -12,7 +12,6 @@ public class MemberTreeMapTest {
         System.out.println("treeMap = " + treeMap);
         treeMap.addMember(new Member(3, "cc"));
         System.out.println("treeMap = " + treeMap);
-
         treeMap.removeMember(1);
         System.out.println("treeMap = " + treeMap);
     }
